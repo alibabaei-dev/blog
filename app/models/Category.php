@@ -1,18 +1,16 @@
 <?php
-
 class Category
 {
     private $db;
 
-    public function __construct()
+    public function __construct(PDO $db)
     {
-    $this->db = (new Database())->getConnection();
+        $this->db = $db;
     }
 
     public function all()
     {
-        $stmt = $this->db->prepare("SELECT * FROM categories");
-        $stmt->execute();
+        $stmt = $this->db->query("SELECT * FROM categories");
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
@@ -23,4 +21,3 @@ class Category
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 }
-

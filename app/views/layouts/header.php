@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title><?= $pageTitle ?? 'وبلاگ من'; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/myblog-project/public/css/style.css">
+    <link rel="stylesheet" href="/myblog/public/css/style.css">
+    <link rel="stylesheet" href="/myblog/public/css/content.css">
+    <link rel="stylesheet" href="/myblog/public/css/create.css">
 </head>
 <body>
 
 <header class="main-header">
     <div class="logo-wrapper">
-        <h1 class="logo"><img src="/myblog-project/public/asset/logo.png" alt="Logo"></h1>
+        <h1 class="logo"><img src="/myblog/public/asset/logo.png" alt="Logo"></h1>
         <p class="tagline">"Love is the one thing that’s transcendent beyond space and time"</p>
     </div>
     

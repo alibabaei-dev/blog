@@ -1,8 +1,7 @@
-<?php
-
-return [
-    'host' => 'localhost',
-    'name' => 'myblog',
-    'user' => 'root',
-    'pass' => ''
-];
+//روش قدیمی
+// return [
+//     'host' => 'localhost',
+//     'name' => 'myblog',
+//     'user' => 'root',
+//     'pass' => ''
+// ];

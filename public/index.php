@@ -1,7 +1,9 @@
 
 <?php
-require_once __DIR__ . '/../app/controllers/PostController.php';
-require_once '../autoload.php';
+
+define('ROOT_PATH', __DIR__ . '/../');
+
+require_once ROOT_PATH . 'app/autoload.php';
 
 $action = $_GET['action'] ?? 'index';
 $controller = new PostController();

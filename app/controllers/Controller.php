@@ -2,12 +2,11 @@
 
 class Controller {
     public function model($modelName) {
-        require_once __DIR__ . "/../models/{$modelName}.php";
-        return new $modelName();
+        $dbConnection = Database::getInstance()->getConnection(); 
+        return new $modelName($dbConnection);
     }
-
     public function view($viewPath, $data = []) {
         extract($data);
-        require_once __DIR__ . "/../views/{$viewPath}.php";
+        require_once ROOT_PATH . "app/views/{$viewPath}.php"; 
     }
 }

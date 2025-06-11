@@ -2,9 +2,12 @@
 
 spl_autoload_register(function($className) {
     $paths = [
-        'app/controllers/',
-        'app/models/',
-        'app/core/',
+        ROOT_PATH . 'app/controllers/', 
+        ROOT_PATH . 'app/models/',
+        ROOT_PATH . 'app/core/',
+        ROOT_PATH . 'app/entities/',
+        ROOT_PATH . 'app/requests/',
+        ROOT_PATH . 'app/services/',
     ];
 
     foreach ($paths as $path) {
@@ -15,4 +18,3 @@ spl_autoload_register(function($className) {
         }
     }
 });
-

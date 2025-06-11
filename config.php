@@ -1,4 +1,4 @@
 <?php
 
-define('BASE_URL', '/myblog-project/public/');
+// define(constant_name: 'BASE_URL', '/myblog/public/');
 

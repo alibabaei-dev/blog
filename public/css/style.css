@@ -1,4 +1,3 @@
-/* فونت فارسی دلخواه */
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
 * {
@@ -24,7 +23,6 @@ body {
   min-height: 100vh;
 }
 
-/* هدر */
 .main-header {
   padding: 2rem;
   text-align: center;
@@ -40,7 +38,6 @@ body {
   color: #adadad;
 }
 
-/* منو */
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -61,8 +58,6 @@ body {
   color: #00e5ff;
   border-color: #00e5ff;
 }
-
-/* پست ویژه */
 
 .featured-post h2 {
   color: #ffffff;
@@ -98,7 +93,6 @@ body {
   color: #ffffff;
 }
 
-/* شبکه پست‌ها */
 .post-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -134,7 +128,6 @@ body {
   color: #00e5ff;
 }
 
-/* فوتر */
 .main-footer {
   color: #aaa;
   padding: 2rem;
@@ -153,7 +146,6 @@ body {
   margin: auto;
 }
 
-/* انیمیشن ستاره‌ها */
 body::before {
   content: "";
   position: fixed;
@@ -172,7 +164,6 @@ body::before {
   100% { background-position: 10000px 10000px; }
 }
 
-/* بخش دسته‌بندی‌ها */
 .category-list {
   position: sticky;
   top: 150px;
@@ -187,7 +178,6 @@ body::before {
   box-shadow: 0 0 15px #ffffff0a;
 }
 
-/* تیتر دسته‌بندی */
 .category-list h2 {
   text-align: center;
   font-size: 1.6rem;
@@ -196,7 +186,6 @@ body::before {
   text-shadow: 0 0 5px #00e5ffaa;
 }
 
-/* لیست دسته‌بندی */
 .category-list ul {
   list-style: none;
   padding: 0;
@@ -219,28 +208,25 @@ body::before {
   color: #00e5ff;
 }
 
-/* محتوای اصلی در کنار دسته‌بندی */
 .main-content {
   flex: 1;
   min-width: 0;
 }
 
-/* حفظ استایل قبلی پست‌ها */
 .post-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  padding: 0; /* چون padding تو layout هست */
+  padding: 0; 
 }
 
 .featured-post .post-grid {
   padding: 0;
 }
 
-/* لایه‌بندی جدید صفحه اصلی */
 .layout {
   display: flex;
-  flex-direction: row-reverse; /* چون راست‌چین هستیم */
+  flex-direction: row-reverse; 
   align-items: flex-start;
   gap: 2rem;
   padding: 2rem;

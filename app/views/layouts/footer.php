@@ -13,6 +13,7 @@
         <p style="text-align: center;">© تمامی حقوق محفوظ است - <?= date('Y') ?></p>
     </div>
 </footer>
-
+<canvas id="space-canvas"></canvas>
+<script src="/myblog/public/js/script.js"></script>
 </body>
 </html>

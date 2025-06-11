@@ -1,23 +1,25 @@
 <?php
-
 class Database {
-private $pdodb;
+    private static $instance = null;
+    private $connection;
 
- public function __construct (){
-    try {
-$config = require(__DIR__ . '/db-config.php');
-$db_host = $config['host'];
-$db_name = $config['name'];
-$db_user = $config['user'];
-$db_pass = $config['pass'];
+    private $host = 'localhost';
+    private $db_name = 'myblog';
+    private $username = 'root';
+    private $password = '';
 
-        $this->pdodb = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
-    } catch (PDOException $e) {
-        echo "Connection failed: " . $e->getMessage();
+    private function __construct() {
+        $this->connection = new PDO("mysql:host=$this->host;dbname=$this->db_name", $this->username, $this->password);
+    }
+
+    public static function getInstance() {
+        if (self::$instance === null) {
+            self::$instance = new Database();
+        }
+        return self::$instance;
+    }
+
+    public function getConnection() {
+        return $this->connection;
     }
 }
-    public function getConnection() {
-    return $this->pdodb;
-}
-}
-?>
